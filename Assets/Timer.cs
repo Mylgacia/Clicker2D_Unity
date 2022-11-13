@@ -18,10 +18,10 @@ public class Timer : MonoBehaviour
     void Update()
     {
         timeElapsed += Time.deltaTime;
-        timerText.text = timeElapsed.ToString("0:05");
-        //timerText.text = string.Format("00:00");
+        //timerText.text = timeElapsed.ToString("0:05");
+        timerText.text = string.Format("00:00");
 
-        if (timerText.text == "0:05")
+        if (timerText.text == "00:05")
         {
             Debug.Log("Loose");
 
